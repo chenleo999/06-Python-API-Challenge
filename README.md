@@ -28,3 +28,27 @@ Conclusion:
      in south hemisphere, it is moderate and negative
 
 ______________________________________________________________________
+VacationPy
+
+Code: WeatherPy/VacationPy.ipynb
+Data source: OpenWeather API, Geoapifi
+Analysis results buried in the code file.
+Python packages: hvplot.pandas, pandas, requests
+
+Description:
+
+read city data generated in WeatherPy
+create a map, display humidity as point size
+filter cities to identify good ones:
+  max temperature between 20-30 C
+  wind speed less then 4.5 m/s
+  cloudiness < 10
+use Geoapify to query the nearest hotels of the good cities 
+  within 10000 m radius
+add hotel name to dataframe 
+display city and hotel in map as hover messege
+
+result:
+
+some cities do not have Hotel within 10000 m radius, maybe we need to use accommodation.motel in categories.
+______________________________________________________________________
